@@ -25,3 +25,21 @@ public class TwoSum3 {
     }
     
 }
+
+public class Sum {
+    HashMap<Integer, Integer> h = new HashMap<Integer, Integer>();
+    
+    public boolean find (int k) {
+        int mvalue = 0;
+        for (Integer value:h.keySet()) {
+            if (k - value > 0) {
+                mvalue = k-value;
+                if (mvalue == ) {
+                    
+                    
+                }
+            }
+        }
+    }
+    
+}

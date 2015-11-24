@@ -13,6 +13,7 @@ public class BSTIterator {
     public BSTIterator(TreeNode root) {
         stack = new Stack<TreeNode>();
         while (root != null) {
+            //search all the node from left
             stack.push(root);
             root = root.left;
         }
@@ -25,6 +26,7 @@ public class BSTIterator {
     
     /** @return the next smallest number */
     public int next() {
+        //get small node then check right node.
         int smallvalue;
         TreeNode node = stack.pop();
         smallvalue = node.val;
